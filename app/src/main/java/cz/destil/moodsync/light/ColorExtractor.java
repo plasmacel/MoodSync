@@ -46,7 +46,7 @@ public class ColorExtractor {
                         public void onGenerated(Palette palette) {
                             bitmap.recycle();
                             int defaultColor = App.get().getResources().getColor(R.color.not_recognized);
-                            final int color = palette.getVibrantColor(defaultColor);
+                            final int color = palette.getDominantColor(defaultColor);
                             listener.onColorExtracted(color);
                             new SleepTask(Config.FREQUENCE_OF_SCREENSHOTS, new SleepTask.Listener() {
                                 @Override
