@@ -11,8 +11,8 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## How does it work?
  - it periodically captures screen using the new Lollipop [Media Projection API](https://developer.android.com/reference/android/media/projection/package-summary.html)
- - it extracts vibrant color from the image using [Palette library](https://developer.android.com/tools/support-library/features.html)
- - it sends the vibrant color to all lights on the same WiFi using [LIFX SDK](https://github.com/LIFX/lifx-sdk-android)
+ - it extracts the most dominant color (opposed to the original version, which extracts the most vibrant color, regardless of frequency) from the image using [Palette library](https://developer.android.com/tools/support-library/features.html)
+ - it sends the color to all lights on the same WiFi using [LIFX SDK](https://github.com/LIFX/lifx-sdk-android)
  - it is designed for Android TV, but works on Lollipop phones and tablets too
  
 ## Issues, feature requests?
